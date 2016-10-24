@@ -63,6 +63,11 @@ class Rational:
         Simplify the current rational
         """
 
+        gcd_simple = gcd(self.numerator, self.denominator)
+
+        self.numerator /= gcd_simple
+        self.denominator /= gcd_simple
+
         
 
 if __name__ == "__main__":
@@ -74,6 +79,8 @@ if __name__ == "__main__":
     a = Rational(2, 3)
     b = Rational(5, 3)
     c = Rational(7, 3)
+
+    print (a.add(b))
     
         
 
