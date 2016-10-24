@@ -1,4 +1,4 @@
-class rational:
+class Rational:
     """
     Class representative a rational number with a numerator and a denominator
     """
@@ -11,6 +11,11 @@ class rational:
         """
         Multiply the current rational with another and return the result
         """
+
+        num = self.numerator * rational2.numerator
+        den = self.denominator * rational2.denominator
+
+        return Rational(num, den)
 
         
     
