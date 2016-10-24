@@ -17,6 +17,38 @@ class Rational:
 
         return Rational(num, den)
 
+    def add(self, rational2):
+        """
+        Add the current rational with another and return the result
+        """
+
+        num = self.numerator * rational2.denominator +\
+              rational2.numerator * self.denominator
+
+        den = self.denominator * rational2.denominator
+
+        return Rational(num, den)
+
+    def reverse(self)
+        """
+        Return the reverse value of the current rational
+        """
+
+        return Rational(self.denominator, self.numerator)
+
+    def divided(self, rational2):
+        """
+        Divided the current rational by another
+        """
+
+        return self.multiply(rational2.reverse())
+
+        
+
+        
+    
+        
+
         
     
         
